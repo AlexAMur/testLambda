@@ -1,11 +1,11 @@
 fun main(){
     val nameList = listOf("Sasha","Juli", "Fima", "Alisa")
-    
+
 
     // collect only even length Strings
     val evenFruits = nameList.fold("") { acc, e ->  acc + e }
 
     println(evenFruits)
-    val fourNameList =nameList.filter{ (it.length > 4)}
+    val fourNameList =  nameList.filter{ (it.length > 4)}.fold(""){acc, s -> acc + s }
     println(fourNameList)
 }
